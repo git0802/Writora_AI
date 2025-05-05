@@ -224,16 +224,16 @@ const PricingCards = () => {
               ))}
             </CardContent>
             <CardFooter className="pt- mt-auto w-full">
-              <Link href={plan.btn.href} style={{ width: "100%" }}>
-                <a
-                  className={buttonVariants({
-                    className:
-                      plan.name === "Pro" &&
-                      "bg-purple-500 text-white hover:bg-purple-500/80",
-                  })}
-                >
-                  {plan.btn.text}
-                </a>
+              <Link
+                href={plan.btn.href}
+                style={{ width: "100%" }}
+                className={buttonVariants({
+                  className:
+                    plan.name === "Pro" &&
+                    "bg-purple-500 text-white hover:bg-purple-500/80",
+                })}
+              >
+                {plan.btn.text}
               </Link>
             </CardFooter>
           </Card>

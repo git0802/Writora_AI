@@ -150,10 +150,8 @@ const Navbar = () => {
                       href="/sign-in"
                       className={buttonVariants({ size: "sm" })}
                     >
-                      <span className="flex items-center">
-                        Get Started
-                        <ZapIcon className="ml-1.5 size-3.5 fill-orange-500 text-orange-500" />
-                      </span>
+                      Get Started
+                      <ZapIcon className="ml-1.5 size-3.5 fill-orange-500 text-orange-500" />
                     </Link>
                   </SignInButton>
                 </SignedOut>
