@@ -96,7 +96,8 @@ const Navbar = () => {
                                   <Link
                                     href="/"
                                     className="flex h-full w-full select-none flex-col justify-end rounded-lg bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
-                                    legacyBehavior>
+                                    legacyBehavior
+                                  >
                                     <h6 className="mt-4 mb-2 font-medium text-lg">
                                       All Features
                                     </h6>
@@ -152,10 +153,11 @@ const Navbar = () => {
                     <Link
                       href="/sign-in"
                       className={buttonVariants({ size: "sm" })}
-                      legacyBehavior
                     >
-                      Get Started
-                      <ZapIcon className="ml-1.5 size-3.5 fill-orange-500 text-orange-500" />
+                      <span className="flex items-center">
+                        Get Started
+                        <ZapIcon className="ml-1.5 size-3.5 fill-orange-500 text-orange-500" />
+                      </span>
                     </Link>
                   </SignInButton>
                 </SignedOut>
