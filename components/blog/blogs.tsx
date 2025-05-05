@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import blogs from "@/lib/constants/blogs.json";
 import MagicCard from "../ui/magic-card";
 
 const Blogs = () => {
