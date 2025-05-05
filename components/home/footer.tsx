@@ -8,7 +8,6 @@ const Footer = () => {
   return (
     <footer className="relative mx-auto flex w-full max-w-6xl flex-col items-center justify-center border-border border-t bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/8%),transparent)] px-6 pt-16 pb-8 md:pb-0 lg:px-8 lg:pt-32">
       <div className="-translate-x-1/2 -translate-y-1/2 absolute top-0 right-1/2 left-1/2 h-1.5 w-8 rounded-full bg-foreground"></div>
-
       <div className="grid w-full gap-8 xl:grid-cols-3 xl:gap-8">
         <AnimationContainer delay={0.1}>
           <div className="flex flex-col items-start justify-start md:max-w-[200px]">
@@ -31,13 +30,13 @@ const Footer = () => {
               <Link
                 href="https://github.com/anayatkhan1/Writora-AI"
                 target="_blank"
-              >
+                legacyBehavior>
                 <Github className="size-4 hover:text-white" />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/anayatkhan"
                 target="_blank"
-              >
+                legacyBehavior>
                 <Linkedin className="size-4 hover:text-white" />
               </Link>
             </div>
@@ -185,7 +184,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <div className="mt-8 w-full border-border/40 border-t pt-4 md:flex md:items-center md:justify-between md:pt-8">
         <AnimationContainer delay={0.6}>
           <p className="mt-8 text-muted-foreground text-sm md:mt-0">
@@ -193,7 +191,6 @@ const Footer = () => {
           </p>
         </AnimationContainer>
       </div>
-
       <div className="hidden h-[20rem] items-center justify-center md:flex lg:h-[20rem]">
         <TextHoverEffect text="Writora" />
       </div>

@@ -54,7 +54,7 @@ const Navbar = () => {
       <AnimationContainer reverse delay={0.1} className="size-full">
         <MaxWidthWrapper className="flex items-center justify-between">
           <div className="flex items-center space-x-12">
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <span className="!leading-none font-bold font-heading text-lg">
                 Writora AI
               </span>
@@ -88,7 +88,7 @@ const Navbar = () => {
                                   <Link
                                     href="/"
                                     className="flex h-full w-full select-none flex-col justify-end rounded-lg bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
-                                  >
+                                    legacyBehavior>
                                     <h6 className="mt-4 mb-2 font-medium text-lg">
                                       All Features
                                     </h6>
@@ -136,7 +136,7 @@ const Navbar = () => {
                     className={`${buttonVariants({
                       size: "sm",
                     })} font-semibold`}
-                  >
+                    legacyBehavior>
                     {pathname === "/dashboard"
                       ? "Your Posts"
                       : "Upload a video"}
@@ -148,10 +148,7 @@ const Navbar = () => {
               <div className="flex items-center gap-x-4">
                 <SignedOut>
                   <SignInButton>
-                    <Link
-                      href="/sign-in"
-                      className={buttonVariants({ size: "sm" })}
-                    >
+                    <Link href="/sign-in" className={buttonVariants({ size: "sm" })} legacyBehavior>
                       Get Started
                       <ZapIcon className="ml-1.5 size-3.5 fill-orange-500 text-orange-500" />
                     </Link>
@@ -182,7 +179,7 @@ const ListItem = React.forwardRef<
             className
           )}
           {...props}
-        >
+          legacyBehavior>
           <div className="flex items-center space-x-2 text-neutral-300">
             <Icon className="h-4 w-4" />
             <h6 className="!leading-none font-medium text-sm">{title}</h6>

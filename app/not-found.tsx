@@ -20,7 +20,7 @@ export default function NotFound() {
             </Link>
             .
           </p>
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <Button className="mt-8">Back to homepage</Button>
           </Link>
         </div>

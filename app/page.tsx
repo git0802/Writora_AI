@@ -62,7 +62,7 @@ const HomePage = async () => {
                 <Link
                   href={user ? "/dashboard" : "/sign-in"}
                   className="flex items-center"
-                >
+                  legacyBehavior>
                   Start creating for free
                   <ArrowRightIcon className="ml-2 h-4 w-4" />
                 </Link>
@@ -90,7 +90,6 @@ const HomePage = async () => {
           </AnimationContainer>
         </div>
       </MaxWidthWrapper>
-
       {/* Companies Section */}
       <MaxWidthWrapper>
         <AnimationContainer delay={0.4}>
@@ -119,7 +118,6 @@ const HomePage = async () => {
           </div>
         </AnimationContainer>
       </MaxWidthWrapper>
-
       {/* Features Section */}
       <MaxWidthWrapper className="pt-10">
         <AnimationContainer delay={0.1}>
@@ -145,7 +143,6 @@ const HomePage = async () => {
           </BentoGrid>
         </AnimationContainer>
       </MaxWidthWrapper>
-
       {/* Process Section */}
       <MaxWidthWrapper className="py-10">
         <AnimationContainer delay={0.1}>
@@ -185,7 +182,6 @@ const HomePage = async () => {
           ))}
         </div>
       </MaxWidthWrapper>
-
       {/* Pricing Section */}
       <MaxWidthWrapper className="py-10">
         <AnimationContainer delay={0.1}>
@@ -217,7 +213,6 @@ const HomePage = async () => {
           </div>
         </AnimationContainer>
       </MaxWidthWrapper>
-
       {/* Reviews Section */}
       <MaxWidthWrapper className="py-10">
         <AnimationContainer delay={0.1}>
@@ -318,7 +313,6 @@ const HomePage = async () => {
           </div>
         </div>
       </MaxWidthWrapper>
-
       {/* CTA Section */}
       <MaxWidthWrapper className="scrollbar-hide mt-20 max-w-[100vw] overflow-x-hidden">
         <AnimationContainer delay={0.1}>
