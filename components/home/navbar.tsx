@@ -65,7 +65,7 @@ const Navbar = () => {
                 {NAV_LINKS.map((link) => (
                   <NavigationMenuItem key={link.title}>
                     {!link.menu ? (
-                      <Link href={link.href}>
+                      <Link href={link.href} legacyBehavior>
                         <NavigationMenuLink
                           className={navigationMenuTriggerStyle()}
                         >
@@ -96,7 +96,7 @@ const Navbar = () => {
                                   <Link
                                     href="/"
                                     className="flex h-full w-full select-none flex-col justify-end rounded-lg bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
-                                  >
+                                    legacyBehavior>
                                     <h6 className="mt-4 mb-2 font-medium text-lg">
                                       All Features
                                     </h6>
