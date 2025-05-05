@@ -10,7 +10,6 @@ import { COMPANIES, PROCESS, REVIEWS } from "@/lib/constants/misc";
 import MagicBadge from "@/components/ui/magic-badge";
 import { BentoCard, BentoGrid, CARDS } from "@/components/ui/bento-grid";
 import MagicCard from "@/components/ui/magic-card";
-import PricingCards from "@/components/upload/pricing-cards";
 import {
   Card,
   CardContent,
@@ -20,6 +19,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { LampContainer } from "@/components/ui/lamp";
+import PricingCards from "@/components/pricing-cards";
 
 const HomePage = async () => {
   const user = await currentUser();
@@ -62,7 +62,8 @@ const HomePage = async () => {
                 <Link
                   href={user ? "/dashboard" : "/sign-in"}
                   className="flex items-center"
-                  legacyBehavior>
+                  legacyBehavior
+                >
                   Start creating for free
                   <ArrowRightIcon className="ml-2 h-4 w-4" />
                 </Link>

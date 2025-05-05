@@ -1,6 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Command } from "@/components/ui/command";
+import { cn } from "@/lib/utils";
 import {
   ArrowRightIcon,
   CalendarIcon,
@@ -18,9 +19,8 @@ import {
   CardTitle,
 } from "./card";
 import { Input } from "./input";
-import { Label } from "./label";
 import { Integrations } from "./integrations";
-import { cn } from "@/lib/utils";
+import { Label } from "./label";
 
 export const CARDS = [
   {
@@ -174,7 +174,7 @@ const BentoCard = ({
           variant: "ghost",
           className: "cursor-pointer",
         })}
-        legacyBehavior>
+      >
         {cta}
         <ArrowRightIcon className="ml-2 h-4 w-4" />
       </Link>
